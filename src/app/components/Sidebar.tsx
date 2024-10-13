@@ -12,7 +12,7 @@ import {
 export default function Sidebar() {
     return (
         <div className=" sidebar w-2/6 h-full right-0 relative">
-            <div className="flex flex-col items-center justify-evenly gap-5">
+            <div className="flex flex-col items-center justify-evenly gap-7">
                 <div className="banner">
                     <p className="font-serif text-md">ABOUT ME</p>
                     <div className="triangle"></div>
