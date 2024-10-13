@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import Link from 'next/link';
 export default function Home() {
   return (
-    <div className="mt-28 main-container">
+    <div className="mt-28 ml-0 main-container">
       <div className="img-container  tracking-widest ">
         <div
           id="img1"
