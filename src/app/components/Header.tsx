@@ -30,7 +30,7 @@ export default function Header() {
     }, []); 
 
     return (
-        <div className="header w-full h-20 fixed top-0 left-0 z-50">
+        <div className="header w-full h-20 fixed top-0 left-0 z-50 mb-4">
             <div className="flex  header-sub items-center justify-between px-4 md:px-10">
                 <div className="flex items-center gap-2 md:gap-4">
                     <img src="/images/LOGO.png" alt="" className="w-20 md:w-28" />
