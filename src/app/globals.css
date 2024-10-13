@@ -1,0 +1,627 @@
+@tailwind base;
+@tailwind components;
+.texts{
+  @apply hover:cursor-pointer hover:text-yellow-400 ;
+}
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100dvh;
+  overflow: auto;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+.effect .tag {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.175rem;
+  color: #f97316;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.effect .tag::before {
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  content: "";
+  background-color: transparent;
+  height: 2rem;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  top: 0;
+  left: 0;
+}
+
+#img1:hover .tag::before,
+#img2:hover .tag::before,
+#img3:hover .tag::before,
+#img4:hover .tag::before {
+  width: 100%;
+  background-color: #F64900;
+}
+
+#img1:hover .tag,
+#img2:hover .tag,
+#img3:hover .tag,
+#img4:hover .tag {
+  color: white;
+}
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+  filter: contrast(110%); 
+}
+
+.header {
+  background-color: transparent;
+  color: black;
+  transition: all 0.5s ease-in;
+}
+
+.navbar {
+  background-color: #F64900;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#img1 h1:hover,
+#img2 h1:hover{
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+#img1 {
+  background-image: url("/images/sushiii.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(90%);
+  position: relative; 
+}
+
+#img2{
+  
+  height: 250px;
+  background-image: url("/images/Muffins.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+#img3{
+  
+  background-image: url("/images/Flakycroissants.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  
+
+}
+#img4{
+   background-image: url("/images/mocktails.jpg");
+  background-size: cover;
+  background-position: center; 
+  height: 200px;
+}
+.img-container{
+  display: flex;
+  min-width: 100%;
+  flex-shrink: 0;
+  min-height: 400px;  
+  margin: 0 auto;
+  color: #FFFF;
+  
+}
+.img-container div{
+  
+  width: 100%;
+}
+
+.group{
+  display: grid;
+ grid-template-columns: 2fr;
+}
+.small-imgs{
+  overflow-x:auto ;
+}
+.small-imgs div img{
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  transition: all 0.5s ease-in-out;
+  flex-shrink: 0;
+}
+
+.small-imgs div img:hover{
+  transform: rotate(20deg);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.89);
+  cursor: pointer;
+}
+
+.small-imgs div p{
+  color: #262416;
+  font-size: 0.85rem;
+  position: relative;
+
+ padding-left: 0.5rem;
+ padding-right: 0.5rem;
+}
+
+.small-imgs div p::before{
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  content: "";
+  background-color: transparent;
+  height: 2rem;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  top: -0.5rem;
+  left: 0;
+}
+.small-imgs div img:hover + p::before,
+.small-imgs div p:hover::before {
+  width: 100%;
+  background-color: #F64900;
+  cursor: pointer;
+}
+
+.small-imgs div img:hover + p,
+.small-imgs div p:hover {
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+.navbar{
+  background-color: #F64900;
+  color: white;
+  position:fixed;
+  transition: all 0.5s ease-in;
+  z-index: 10;
+}
+.card {
+  min-width: 200px;
+  width: 40%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between; 
+  min-height: 300px;
+  overflow: hidden; 
+  position: relative;
+  transition: transform 0.5s ease;
+  object-fit: contain;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+.card:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.card button{
+  margin-bottom: 1rem;
+  border: 2px solid #F64900;
+  color: #F64900;
+}
+.card:hover button {
+  visibility: visible;
+  
+}
+
+.card:hover .card-img img {
+  transform: scale(1.2) rotate(3deg); 
+  object-fit: cover;
+}
+.card button:hover {
+  background-color: #F64900;
+  color: #262416;
+}
+
+
+.card-img {
+  position: relative;
+  width: 100%;
+  min-height: 224px;
+  overflow: hidden; 
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.card-img img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.card-img::before {
+  content: "BREAKFAST";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+.card-1::before {
+  content: "CUISINE";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+.card-2::before {
+  content: "APPETIZER";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+.card-3::before {
+  content: "CUISINE";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+.card-4::before {
+  content: "APPETIZER";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+.card-5::before {
+  content: "APPETIZER";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+
+.card-6::before {
+  content: "APPETIZER";
+  position: absolute;
+  width: 40%;
+  top: 87%;
+  z-index: 2;
+  background-color: #CB8A2D;
+  color: white;
+  height: 1.9rem;
+  padding: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+  border-top-right-radius: 2rem;
+}
+
+
+
+
+.card button {
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo2::before{
+  content: " ";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+ background-color: #cb892dd3;
+ top:50%;
+ z-index: -1;
+}
+.logo2::after{
+  content: "Food52";
+  position: absolute;
+  z-index: 1;
+  font-size: 1.4rem;
+  left: 47.5%;
+  top: 40%;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btn{
+  width: 50%;
+  height: 2.5rem;
+  padding: 1rem;
+  background-color: #F64900;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 0.5rem;
+}
+#btn:hover{
+  background-color: #df5216;
+}
+.banner {
+  display: inline-block;
+  background-color: #cb892dd3; 
+  color:#262416;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #cb892dd3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px; 
+}
+
+.form input{
+  border: 1px solid rgb(168, 162, 162);
+  font-size: 1.20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+ outline: none;
+}
+.form input:focus{
+  border: 1px solid #F64900;
+}
+.reg-btn button:first-child:hover {
+  background-color: #df5216;
+}
+
+.reg-btn button:nth-child(2):hover {
+  background-color: rgb(33, 39, 49);
+}
+.article-1 button:hover{
+  background-color:#df5216 ;
+}
+/* styles for card1  */
+.card-container{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.card-container:hover{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.footer{
+  min-height: calc(100dvh - 200px);
+  
+}
+.footerbanner {
+  display: inline-block;
+  background-color: #cb892dd3; 
+  color:#262416;
+  padding: 6px 10px;
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  width: 60%;
+}
+
+.footertriangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #cb892dd3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px; 
+}
+
+@media screen and (width < 600px) {
+  .footer {
+    width: 100%;
+  }
+.header{
+  height: auto;
+  flex-direction: column;
+}
+.main-container{
+  padding: auto 10px;
+}
+  .content {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   /* padding: auto 16px;
+   margin: 0 auto; */
+   
+  }
+
+  .card {
+    width: 100%;
+    padding: 16px 10px;
+    margin: 0 auto;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  .small-imgs{
+    overflow-x: auto;
+    gap: 2px;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .small-imgs div img{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.5s ease-in-out;
+    flex-shrink: 0;
+    
+  }
+  .img-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #img1{
+    height: 200px;
+  }
+  .about-main,.about-para,.about{
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding:0 8px ;
+    text-align: center;
+  }
+  .about-main{
+    margin-top: 6rem;
+  }
+  
+  .about img{
+    height: 8rem;
+  }
+  .about h1 {
+    font-size: 2rem;
+  }
+  .register-content{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 4px;
+  }
+  .reg-sec-2,.reg-sec-1{
+    width: 100%;
+  }
+  .input-1{
+    flex-direction: column;
+  }
+  .input-2{
+    flex-direction: column;
+  }
+  .card-container{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .img-small{
+    width: 100%;
+  }
+  .newsletter{
+    width: 80%;
+    margin: 10px auto;
+  }
+   .card-content{
+    flex-direction: column;
+    width: 100%;
+   }
+   .card1-sub{
+    width: 100%;
+    padding: 4px;
+   }
+   .article-content{
+    width: 100%;
+    padding: 4px;
+   }
+   .logo2 img{
+    width: 4rem;
+   }
+   .logo2::before{
+    content: " ";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+   background-color: #cb892dd3;
+   top:50%;
+   z-index: -1;
+  }
+  .logo2::after{
+   
+    font-size: 0.5rem;
+    left: 45%;
+   
+  }
+  .header-sub{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-sub ul {
+   margin-bottom: 10px;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+   justify-content: space-evenly;
+  }
+  .header-sub .texts {
+    font-size: 14px; 
+  }
+.icons{
+  margin-bottom: 10px;
+
+}
+  .header-sub img {
+    width: 50px; 
+  }
+}
