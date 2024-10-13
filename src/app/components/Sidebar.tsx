@@ -48,53 +48,53 @@ export default function Sidebar() {
                     <div className="triangle"></div>
                 </div>
 
-               <div className=" flex flex-col items-center justify-center gap-4 w-full -mr-9 px-4 text-sm">
-                <div className="  flex  items-center justify-center gap-2 w-full">
+               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 w-full -mr-9 px-4 text-sm">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/sushiii.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >A Comprehensive Guide to Sushi</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/Muffins.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >67 Muffin Recipes Youll Want to Make Again and Again</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/croissant.jpeg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >21 Croissant Recipe Ideas for Breakfast, Lunch, and Diinner</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className="list  flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/mocktailsmall.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >How to Create Non-Alcoholic Versions of Popular Cocktails</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/coffee.png" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >"Mastering the Art of Coffee: Brewing Techniques and Flavorful Recipes"</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/granola.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >"Nutritious and Delicious Granola Recipes for a Healthy Breakfast"</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className="list  flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/spaghettismall.jpg" alt="" className=" rounded-full "/></div><div className="w-4/5"><p >Delicious Pasta Recipes: From Classic to Creative Dishes"</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/soup.jpeg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >"Wholesome and Hearty Soup Recipes for Every Appetite"</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/salads.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >"Fresh and Flavorful: Creative Leafy Salad Recipes to Enjoy"</p></div>
                 </div>
 
-                <div className="  flex  items-center justify-center gap-2 w-full">
+                <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/eggs.webp" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >"Mastering the Art of Poached Eggs: Tips and Recipes "</p></div>
                 </div>
