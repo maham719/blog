@@ -654,6 +654,13 @@ body{
   color: white;
   background-color: #df5216;
 }
+   .card-content{
+    flex-direction: column;
+  }
+  .card1-sub{
+    width: 100%;
+    margin: 0 auto;
+  }
   }
 
 
@@ -706,6 +713,12 @@ body{
     gap: 2rem;
     width: 80%;
    }
-   
+    .card-content{
+    flex-direction: column;
+  }
+  .card1-sub{
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
