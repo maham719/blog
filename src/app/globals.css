@@ -697,11 +697,11 @@ body{
   }
   .small-imgs div img{
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     transition: all 0.5s ease-in-out;
     flex-shrink: 0;
-    gap:0.5rem;
+    
   }
   .sidebar-list{
     width: 100%;
