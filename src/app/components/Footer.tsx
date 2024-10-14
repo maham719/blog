@@ -19,14 +19,15 @@ export default function Footer() {
 
         {/* footer's second section */}
         <div className="flex flex-col md:flex-row items-center justify-center  w-full md:w-2/3 gap-8 ">
-          {/* Contact Section */}
+        
          
 
           {/* Follow Us Section */}
           <div className="flex flex-col items-center w-full md:w-full gap-8">
           <div className=" flex  justify-center items-center"> 
+             <img src="images/LogoDark.png" alt="Logo" className="w-20" />
           <h1 className="font-extrabold text-xl text-[#FFC101]">Food52</h1>
-          <img src="images/LogoDark.png" alt="Logo" className="w-20" />
+         
           
           </div>
           <hr className="w-full border-[#110f0a]"/>
