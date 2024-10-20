@@ -48,7 +48,7 @@ export default function Sidebar() {
                     <div className="triangle"></div>
                 </div>
 
-               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 w-full -mr-9 px-4 text-sm">
+               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 w-full  pl-5 text-sm">
                 <div className=" list flex  items-center justify-center gap-2 w-full">
 
                     <div className="w-1/5"><img src="images/sushiii.jpg" alt="" className=" rounded-full"/></div><div className="w-4/5"><p >A Comprehensive Guide to Sushi</p></div>
