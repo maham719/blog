@@ -135,9 +135,7 @@ body{
   display: grid;
  grid-template-columns: 2fr;
 }
-.small-imgs{
-  overflow-x:auto ;
-}
+
 .small-imgs div img{
   border-radius: 50%;
   width: 7rem;
@@ -720,5 +718,6 @@ body{
     width: 100%;
     margin: 0 auto;
   }
+  
 }
 
