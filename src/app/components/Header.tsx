@@ -18,8 +18,7 @@ export default function Header() {
 
     useEffect(() => {
         const hamburger = document.querySelector('.hamburger-menu') as HTMLElement | null;
-        const menu = document.querySelector('#menu') as HTMLElement | null;
-      const  items=document.querySelector('ul') as HTMLElement | null;
+      
         const toggleMenu = () => {
             setMenuOpen((prevState) => !prevState);
         };
