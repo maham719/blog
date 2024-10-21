@@ -14,6 +14,29 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+   
+    useEffect(() => {
+        const handleScroll = () => {
+    const nav =document.querySelector(".header");
+
+          if (window.scrollY > 0) {
+            setIsScrolled(true);
+            nav?.classList.add("navbar");
+          } else {
+            setIsScrolled(false);
+            nav?.classList.remove("navbar");
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+
+  
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
