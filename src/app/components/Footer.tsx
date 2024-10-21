@@ -21,8 +21,9 @@ export default function Footer() {
 
           <div className="flex flex-col items-center w-full md:w-full gap-8">
           <div className=" flex  justify-center items-center"> 
+             <img src="images/LogoDark.png" alt="Logo" className="w-20" />
           <h1 className="font-extrabold text-xl text-[#FFC101]">Food52</h1>
-          <img src="images/LogoDark.png" alt="Logo" className="w-20" />
+         
           
           </div>
           <hr className="w-full border-[#110f0a]"/>
