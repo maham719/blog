@@ -671,7 +671,6 @@ body{
   width: 100%;
   margin: 0 auto;
 }
-.menu{
 
    .card-content{
     flex-direction: column;
@@ -681,8 +680,6 @@ body{
     margin: 0 auto;
   }
   .menu{
-
-
  left:0;
 }
 #menu{
@@ -713,7 +710,7 @@ background-color: rgba(0, 0, 0, 0.842);
   padding-left: 2rem;
   padding-top: 1rem;
 }
-}}
+}
 
 @media screen and (width >600px) and (width < 1000px) {
   .menu{
@@ -728,15 +725,15 @@ background-color: rgba(0, 0, 0, 0.842);
    top: 90%;
     background-color: rgba(0, 0, 0, 0.842);
     padding: 5rem;
-    gap: 4rem;
-    font-size: 2rem;
+    gap: 8rem;
+    font-size: 1rem;
     display: flex;
    color: white;
     right: -110%;
    }
    .icons{
      margin-top: 20%;
-     font-size: 3rem;
+     font-size: 1.5rem;
    }
    .hamburger-menu{
      visibility: visible;
@@ -773,8 +770,6 @@ background-color: rgba(0, 0, 0, 0.842);
   .header ul{
 
     gap:1rem;
-
-    gap:2px;
 
   }
   .header-sub{
