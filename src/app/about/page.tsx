@@ -3,7 +3,7 @@ import Newsletter from '../components/Newsletter';
 
 export default function About(){
     return(
-        <div className="mt-20 about-main " >
+        <div className="mt-32 about-main " >
            
         <div  className="w-4/5 mx-auto h-auto flex justify-evenly items-center about p-16 ">
        <div className="flex flex-col items-center justify-between gap-12 aabout ">  <h1 className="text-5xl text-center font-serif text-[#F64900] font-bold">ABOUT US</h1>

@@ -6,7 +6,7 @@ export default function Articletwo(){
     return (
      
          <div className="mt-24 ">
-      <div className="w-11/12 h-auto mx-auto content  mt-40 flex ">
+      <div className="w-full h-auto  content  mt-40 flex ">
         <div className="w-2/3 h-auto flex flex-col gap-12 article-content ">
         <h1  className="font-bold font-serif text-4xl">Mocktails Magic: Creating Non-Alcoholic Versions of Popular Cocktails</h1>
         <img src="/images/mocktail.webp" alt="" />

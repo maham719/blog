@@ -10,19 +10,15 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    // parent container
-    <div className="md:w-full sm:px-10 md:px-0 sm:w-full">
-      {/* footer container main */}
+    <div className="w-full ">
       <div className="bg-[#262416] w-full flex flex-col md:flex-row  justify-center flex-shrink-0 items-center pt-8">
         
        
 
-        {/* footer's second section */}
         <div className="flex flex-col md:flex-row items-center justify-center  w-full md:w-2/3 gap-8 ">
-          {/* Contact Section */}
+        
          
 
-          {/* Follow Us Section */}
           <div className="flex flex-col items-center w-full md:w-full gap-8">
           <div className=" flex  justify-center items-center"> 
           <h1 className="font-extrabold text-xl text-[#FFC101]">Food52</h1>
@@ -52,7 +48,7 @@ export default function Footer() {
                 className="texts cursor-pointer"
               />
             </div>
-            <ul className="flex flex-col md:flex-row text-white font-bold gap-4 pb-8">
+            <ul className="flex flex-col items-center justify-center md:flex-row text-white font-bold gap-4 pb-8">
               <Link href={'/'}>
                 <li className="texts">HOME</li>
               </Link>
