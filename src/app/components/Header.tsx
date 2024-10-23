@@ -56,12 +56,12 @@ export default function Header() {
         const menu = document.querySelector('#menu') as HTMLElement | null;
         if (menu) {
             if (menuOpen) {
-                menu.classList.add('menu'); // Ensure this class displays the menu
+                menu.classList.add('menu'); 
             } else {
                 menu.classList.remove('menu');
             }
         }
-    }, [menuOpen]); // Run this effect when menuOpen changes
+    }, [menuOpen]);
 
     return (
         <div className="header w-full h-20 fixed top-0 z-50 mb-4">
