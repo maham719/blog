@@ -49,9 +49,9 @@ export default function Sidebar() {
                 </div>
 
 
-               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 w-full  pl-4 text-sm">
+               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 min-w-full  pl-4 text-sm">
 
-               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 w-full  pl-5 text-sm">
+               <div className=" sidebar-list flex flex-col items-center justify-center gap-4 min-w-full  pl-5 text-sm">
 
                 <div className=" list flex  items-center justify-center gap-2 w-full">
 
