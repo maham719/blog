@@ -32,7 +32,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="header w-full h-20 fixed top-0 z-50 mb-4 pt-3">
+    <div className="header w-full h-20 fixed top-0 z-50 mb-4 py-3">
       <div className="flex header-sub items-center justify-between md:px-10">
         <div className="flex items-center gap-2 md:gap-4 title">
           <Image src="/images/LOGO.png" alt="Food52 Logo" width={80} height={80} />
